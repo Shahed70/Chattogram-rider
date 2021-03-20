@@ -102,7 +102,6 @@ const Login = () => {
 
 
  const  handleSignInWithEmail = (e)=>{
-     const newUse = {...oldUser}
     e.preventDefault();
         firebase
           .auth()
@@ -251,7 +250,11 @@ const Login = () => {
           </div>
         </div>
       </div>
+      <div className="sr-only">
+        {loggedInUser.name}
+      </div>
     </div>
+   
     );
 };
 
