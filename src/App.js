@@ -29,9 +29,9 @@ function App() {
             <PrivateRoute path="/destination">
               <Destination></Destination>
             </PrivateRoute>
-            <PrivateRoute path="/destination/:id">
-                <Destination></Destination>
-            </PrivateRoute>
+            <PrivateRoute path="/destination/:id" component={Destination} />
+               
+           
           </Switch>
         </Router>
       </UserContext.Provider>

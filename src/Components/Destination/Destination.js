@@ -1,17 +1,23 @@
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import {  useLocation, useParams } from 'react-router-dom';
 import DateTime from '../DateTime/DateTime';
 import { rideData } from '../fakeData';
 import GoogleMap from '../Map/GoogleMap';
 import './Destination.css'
 
+
+
 const Destination = () => {
+        // let {pathname} = useLocation()
+        // let len = pathname.length
+        // const id = pathname.slice(13,len)
+
         const [data, setData] = useState({})
         const [choosed, setChoosed] = useState(true)
         const [address, setAddress] = useState({})
 
-        const {id} = useParams()
-        console.log(id);
+        //  const {id} = useParams()
+        //  console.log(id);
         const vehicleSingleData = rideData.find(data => {
         return data.name === `${id}`
         })
