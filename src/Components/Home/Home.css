@@ -12,3 +12,30 @@
 .home-bg{
     height: 91vh;
 }
+
+
+@media (max-width:1000px){
+    .home-bg{
+        height: 100%;
+    }
+    .display-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex-item{
+        width: 45%;
+        margin: 2%;
+    }
+}
+
+@media(max-width:500px){
+    .display-flex{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .flex-item{
+        width: 100%;
+    }
+
+}

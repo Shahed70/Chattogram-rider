@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div className="container-fluid bg-secondary home-bg py-5">
       <div className="container mt-5">
-        <div className="d-flex flex-md-row flex-wrap justify-content-around mb-4 p-3 flex-sm-column">
+        <div className="d-flex display-flex   justify-content-between mb-4 p-3">
           {vehicleData.map((vehicle) => {
             return (
               <div key={vehicle.name} className="flex-item ">

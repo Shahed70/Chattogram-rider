@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import DateTime from '../DateTime/DateTime';
 import { rideData } from '../fakeData';
 import GoogleMap from '../Map/GoogleMap';
 import './Destination.css'
@@ -29,6 +30,10 @@ const Destination = () => {
         <div className="container py-5">
         <div className="row">
           <div className="col-md-5 col-sm-12">
+          <div className="date mb-5 p-2">
+            <p>Choose your prefered time :</p>
+            <DateTime />
+          </div>
             {
               choosed ?
               <div className="destination">
