@@ -10,8 +10,8 @@ const Home = () => {
         <div className="d-flex display-flex   justify-content-between mb-4 p-3">
           {vehicleData.map((vehicle) => {
             return (
-              <div key={vehicle.name} className="flex-item ">
-                <Link className="link-style" to={`/destination/${vehicle.name}`}>
+              <div key={vehicle.name} className="flex-item">
+                <Link className="link-style text-uppercase" to={`/destination/${vehicle.name}`}>
                   <div className="card">
                     <div className="card-body">
                       <img src={vehicle.photo} alt="" />
