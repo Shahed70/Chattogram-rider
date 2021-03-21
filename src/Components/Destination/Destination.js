@@ -8,16 +8,14 @@ import './Destination.css'
 
 
 const Destination = () => {
-        // let {pathname} = useLocation()
-        // let len = pathname.length
-        // const id = pathname.slice(13,len)
+        let {pathname} = useLocation()
+        let len = pathname.length
+        const id = pathname.slice(13,len)
 
         const [data, setData] = useState({})
         const [choosed, setChoosed] = useState(true)
         const [address, setAddress] = useState({})
 
-        //  const {id} = useParams()
-        //  console.log(id);
         const vehicleSingleData = rideData.find(data => {
         return data.name === `${id}`
         })

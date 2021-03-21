@@ -8,7 +8,7 @@ const Header = () => {
 <div className="container-fluid bg-dark">
       <div className="container">
         <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-
+            <Link className="text-light link" to="/">URBAN RIDER</Link>
           <button
             className="navbar-toggler"
             type="button"
