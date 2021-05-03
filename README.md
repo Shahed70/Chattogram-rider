@@ -1,6 +1,6 @@
 ### A brief introduction about this project
 # Project Name: Chattogram rider
-Chattoram rider is fully  responsive online ticket managing service applicaton based on popular javascript framework react js
+Chattoram rider is fully  responsive online ticket managing service application based on popular javascript framework react js
 ### functionalities of this project
 1.User can choose single riding service from the four services \
 2.User can pick suitable riding time \
