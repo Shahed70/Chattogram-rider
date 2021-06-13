@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import {  useLocation, useParams } from 'react-router-dom';
+import {  useLocation} from 'react-router-dom';
 import DateTime from '../DateTime/DateTime';
 import { rideData } from '../fakeData';
 import GoogleMap from '../Map/GoogleMap';
